@@ -3,11 +3,17 @@
     <head>
         <title>Website Title</title>
         <link rel = "stylesheet" type="text/css" href="indexstyle.css">
+        <script src="indexscript.js"></script> <!--include the js script into our html file-->
     </head>
     <body>
         <div>
             <h2>To Do List</h2>
-            <ul>
+            <form method>
+                <input type="text" id="newTask" placeholder="Enter a task...">  
+                <button type="button" id="taskButton" onclick="addListItem()">Add</button>
+                <!--added onclick event in button which calls the addListItem() function-->
+            </form>
+            <ul id="taskList">
                 <li>Pay bills</li>
                 <li>Read a book</li>
                 <li>Meet Anna</li>
